@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{695D90E7-4BB4-40CF-A205-C2CB4BEA86F6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Cor3.Forms</RootNamespace>
+    <AssemblyName>System.Cor3.Forms</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\oIo\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Cor3.Core\cor3.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Cor3.Forms/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE;CONSOLE;</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' " />
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' " />
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="fam3">
+      <HintPath>..\Fam3\fam3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Cor3.Core\Properties\GAsm.cs">
+      <Link>Properties\GAsm.cs</Link>
+    </Compile>
+    <Compile Include="Design\DbActionList.cs" />
+    <Compile Include="Design\DbControlDesigner.cs" />
+    <Compile Include="Drawing\BufferedGfx.cs" />
+    <Compile Include="Drawing\BufferedGfxSurface.cs" />
+    <Compile Include="Drawing\BufferedRenderer.cs" />
+    <Compile Include="Drawing\ICustomPaint.cs" />
+    <Compile Include="Drawing\ICustomRenderer.cs" />
+    <Compile Include="Drawing\ImageLoader.cs" />
+    <Compile Include="Drawing\IRCustomPaint.cs" />
+    <Compile Include="Drawing\QualitySettings.cs" />
+    <Compile Include="Drawing\SurfaceQuality.cs" />
+    <Compile Include="Drawing\SurfaceQualitySet.cs" />
+    <Compile Include="Drawing\SurfaceQualitySettings.cs" />
+    <Compile Include="Forms\AdvApi32.cs" />
+    <Compile Include="Forms\AnimatedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AnimateWindow32.cs" />
+    <Compile Include="Forms\CaretWin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DateTimeInfo.cs" />
+    <Compile Include="Forms\Editor\ComboPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Editor\ComboPanelPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Editor\DataPanelTypeConverter.cs" />
+    <Compile Include="Forms\Editor\data_rtf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Editor\DateTimePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Editor\FormExceptionEvent.cs" />
+    <Compile Include="Forms\Editor\IDataValue.cs" />
+    <Compile Include="Forms\Editor\InputValidation.cs" />
+    <Compile Include="Forms\Editor\RichTextPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Editor\TextPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Editor\ToolStripMenuPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\LabelGraphic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\PerPixelAlphaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PerPixelMovable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RoundRectPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\RTF\IButton.cs" />
+    <Compile Include="Forms\RTF\MarginRenderer.cs" />
+    <Compile Include="Forms\RTF\RichEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\RTF\RichEditorUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\RTF\RichTextBoxPrintCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\RTF\RichTextControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\RTF\RichTextInfo.cs" />
+    <Compile Include="Forms\RTF\rtf_edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\RTF\rtf_info_typ.cs" />
+    <Compile Include="Forms\RTF\Ruler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\RTF\RulerMarker.cs" />
+    <Compile Include="Forms\RTF\StyleWatcher.cs" />
+    <Compile Include="Forms\RTF\tabs.cs" />
+    <Compile Include="Forms\StatusFlash.cs" />
+    <Compile Include="Forms\StatusTimerHelper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\TimedTextBoxAssertion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\TimedToolStripTextBoxAssertion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripDataBoundDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripDataBoundMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripDataBoundSplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripDateTimeEntry.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripDirectoryCombo.cs" />
+    <Compile Include="Forms\ToolStrip\ToolStripDropButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripExtender.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripGradientCollectionEditor.cs" />
+    <Compile Include="Forms\ToolStrip\ToolStripGradientControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripGradientSetting.cs" />
+    <Compile Include="Forms\ToolStrip\ToolStripMaskedEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripMenuFileInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripProfessionalGradientRenderer.cs" />
+    <Compile Include="Forms\ToolStrip\ToolStripRichText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripSpringCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripSpringTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripSystemGradientRenderer.cs" />
+    <Compile Include="Forms\ToolStrip\ToolStripTextBoxNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ToolStripUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ToolStrip\ts_dirman.cs" />
+    <Compile Include="Forms\ToolStrip\ts_renderer.cs" />
+    <Compile Include="Forms\TreeNodeToolStripManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\treeviewMover.cs" />
+    <Compile Include="Forms\treeview_node_mover.cs" />
+    <Compile Include="Forms\User32.cs" />
+    <Compile Include="Forms\w32.cs" />
+    <Compile Include="Forms\WinTheme.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Editor\ComboPanel.resx">
+      <DependentUpon>ComboPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editor\ComboPanelPopup.resx">
+      <DependentUpon>ComboPanelPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editor\DateTimePanel.resx">
+      <DependentUpon>DateTimePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editor\RichTextPanel.resx">
+      <DependentUpon>RichTextPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editor\ToolStripMenuPanel.resx">
+      <DependentUpon>ToolStripMenuPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RoundRectPanel.resx">
+      <DependentUpon>RoundRectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RTF\RichEditorUser.resx">
+      <DependentUpon>RichEditorUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RTF\rtf_edit.resx">
+      <DependentUpon>rtf_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RTF\Ruler.resx">
+      <DependentUpon>Ruler.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cor3.Core\System.Cor3-Net20.csproj">
+      <Project>{A2CF282B-96A1-4B49-AAA2-4E3711F7D8A3}</Project>
+      <Name>System.Cor3-Net20</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Documents\Fully themed Windows Vista Controls.htm" />
+    <None Include="Documents\Windows 7 TreeView and ListView « Ira Lukhezo%27s blog.htm" />
+    <None Include="Documents\Windows XP Visual Styles for Windows Forms - CodeProject.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Design" />
+  </ItemGroup>
+</Project>
